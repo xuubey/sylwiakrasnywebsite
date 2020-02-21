@@ -1,70 +1,191 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 body {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.8rem;
-  font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.8rem;
+    font-family: 'Raleway', sans-serif;
 }
 
 article {
-  padding:0 1em;
+    padding: 0 1em;
 }
 
-section{
-  margin: 1em;
-  padding: 1em;
+section {
+    margin: 1em;
+    padding: 1em;
 }
+
 section p {
-  background-color: rgba(82,107,50, .6);
-  color: white;
+    background-color: rgba(82, 107, 50, .6);
+    color: white;
 }
 
 header, main, footer {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 header {
-  padding: 2em;
-  text-align: center;
-  /*background-color: #F5D60A;*/
-  background-image: url('img/bgc.jpg');
-  background-size: cover;
-  background-position: center;
+    padding: 2em;
+    text-align: center;
+    /*background-color: #F5D60A;*/
+    background-image: url('img/bgc.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 header section {
-  margin: 0 auto;
-  width-max: 640px;
+    margin: 0 auto;
+    width-max: 640px;
 }
 
 header img {
-  border-radius: 50%;
-  height: 300px;
+    border-radius: 50%;
+    height: 300px;
 }
 
 h1 {
-  margin: 1em 0;
-  text-transform: uppercase;
+    margin: 1em 0;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+
 }
 
 main {
-  max-width: 1140px;
+    max-width: 1140px;
 }
 
-.course {
+main > section {
+    border-bottom: 1px dotted rgb(82, 107, 50);
 }
+
+main > section:last-child {
+    border-bottom: none;
+}
+
+.socials, .course, .skills {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.social {
+    flex: 0 0 20%;
+    -ms-flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.social img {
+    height: 50px;
+}
+
 
 .course .title {
+    flex: 0 0 33.3%;
+    -ms-flex: 0 0 33.3%;
+    max-width: 33%;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(82, 107, 50);
 }
 
-.course .descrition {
+.course .description {
+    -ms-flex: 0 0 66.6%;
+    flex: 0 0 66.6%;
+    max-width: 66.6%
 }
 
-.school span {
-  color: #A7B8BF;
+.course .description p {
+    padding-left: 1em;
 }
+
+
+.skills .column {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+ul {
+    margin: 0;
+}
+
+ul.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.list > li {
+    padding-left: 1.5em;
+    text-transform: uppercase;
+}
+
+ul.list > li:before {
+    content: "►";
+    padding-right: 0.5em;
+    color: rgb(245, 214, 10);
+}
+
+article {
+    margin-bottom: 1.5em;
+}
+
+.school span, .experience span {
+    color: rgb(82, 107, 50);
+}
+
+.hobby {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-top: 5em;
+    background-color: rgba(245, 214, 10, .7);
+}
+
+.column-hobby {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 1.5em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.hobby img {
+    border-radius: 50%;
+    height: 200px;
+    transition: .2s;
+}
+
+.hobby img:hover {
+    opacity: 0.5;
+}
+
+.hobby a {
+    color: black;
+    text-decoration: none;
+}
+
+.hobby a:hover {
+    opacity: 0.5;
+}
+
 
 footer {
- padding: 1em;
+    padding: .5em;
+    background-color: rgb(245, 214, 10);
+    text-align: center;
 }
+
+/*NOTATKI
+- hobby: w js klasa toggle (dodawanie, odejmowanie tekstu + powiększenie obrazka)
+- JS: efekty typu płynne wejścia nowych elementów, powiększające się ikonki po kliknięciu/najechaniu
+*/
