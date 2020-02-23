@@ -16,9 +16,10 @@ section {
     padding: 1em;
 }
 
-section p {
+p.welcome {
     background-color: rgba(82, 107, 50, .6);
     color: white;
+    font-size: 1.5em;
 }
 
 header, main, footer {
@@ -102,6 +103,9 @@ main > section:last-child {
 
 .course .description p {
     padding-left: 1em;
+    background-color: rgba(82, 107, 50, .6);
+    color: white;
+
 }
 
 
@@ -185,7 +189,3 @@ footer {
     text-align: center;
 }
 
-/*NOTATKI
-- hobby: w js klasa toggle (dodawanie, odejmowanie tekstu + powiększenie obrazka)
-- JS: efekty typu płynne wejścia nowych elementów, powiększające się ikonki po kliknięciu/najechaniu
-*/

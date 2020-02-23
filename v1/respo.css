@@ -1,0 +1,25 @@
+@media only screen and (max-width: 767px) {
+    p.welcome {
+        font-size: 2em;
+    }
+
+    .course, .skills {
+        display: block;
+    }
+
+    .course .title, .course .description, .skills .column {
+        max-width: 100%;
+    }
+
+    .hobby {
+       padding-top: 2em;
+    }
+    .column-hobby {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    footer {
+        text-align: center;
+    }
+}
