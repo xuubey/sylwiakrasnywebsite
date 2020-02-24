@@ -17,8 +17,8 @@ section {
 }
 
 p.welcome {
-    background-color: rgba(82, 107, 50, .6);
-    color: white;
+    background-color: rgb(245, 217, 206);
+    color: rgb(104, 49, 13);
     font-size: 1.5em;
 }
 
@@ -29,8 +29,7 @@ header, main, footer {
 header {
     padding: 2em;
     text-align: center;
-    /*background-color: #F5D60A;*/
-    background-image: url('img/bgc.jpg');
+    background-image: url('img/bgc1.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -40,10 +39,12 @@ header section {
     width-max: 640px;
 }
 
-header img {
+.image {
     border-radius: 50%;
     height: 300px;
+    transition: .2s;
 }
+
 
 h1 {
     margin: 1em 0;
@@ -51,9 +52,7 @@ h1 {
 }
 
 h3 {
-    text-transform: uppercase;
-    font-weight: bold;
-
+    background-color: rgb(245, 217, 206);
 }
 
 main {
@@ -79,12 +78,18 @@ main > section:last-child {
     flex: 0 0 20%;
     -ms-flex: 0 0 20%;
     max-width: 20%;
+    transition: .2s;
 }
 
 .social img {
     height: 50px;
 }
 
+.social img:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+}
 
 .course .title {
     flex: 0 0 33.3%;
@@ -92,7 +97,7 @@ main > section:last-child {
     max-width: 33%;
     font-weight: bold;
     text-transform: uppercase;
-    color: rgb(82, 107, 50);
+    color: rgb(104, 49, 13);
 }
 
 .course .description {
@@ -103,8 +108,7 @@ main > section:last-child {
 
 .course .description p {
     padding-left: 1em;
-    background-color: rgba(82, 107, 50, .6);
-    color: white;
+    color: rgb(104, 49, 13);
 
 }
 
@@ -132,7 +136,7 @@ ul.list > li {
 ul.list > li:before {
     content: "►";
     padding-right: 0.5em;
-    color: rgb(245, 214, 10);
+    color: rgb(245, 162, 168);
 }
 
 article {
@@ -149,43 +153,60 @@ article {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-top: 5em;
-    background-color: rgba(245, 214, 10, .7);
+
 }
 
 .column-hobby {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
+    position: relative;
+    -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
     margin-bottom: 1.5em;
     align-items: center;
     justify-content: center;
     text-align: center;
 
+
 }
 
-.hobby img {
+.img {
     border-radius: 50%;
     height: 200px;
     transition: .2s;
 }
 
-.hobby img:hover {
+.img:hover {
     opacity: 0.5;
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
 }
 
-.hobby a {
-    color: black;
-    text-decoration: none;
+.center, a > .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .2s;
+    opacity: 0;
 }
 
-.hobby a:hover {
-    opacity: 0.5;
+a > .center {
+    opacity: 1;
+    color: rgb(245, 217, 206);
+}
+
+.img:hover + .center, .img:hover + a > .center {
+    color: rgb(104, 49, 13);
+    opacity: 1;
 }
 
 
 footer {
     padding: .5em;
-    background-color: rgb(245, 214, 10);
+    background-color: rgb(184, 125, 91);
+    color: rgb(245, 217, 206);
     text-align: center;
 }
-
