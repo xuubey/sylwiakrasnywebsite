@@ -18,7 +18,7 @@ section {
 
 p.welcome {
     background-color: rgb(245, 217, 206);
-    color: rgb(104, 49, 13);
+    color: rgb(67,94,62);
     font-size: 1.5em;
 }
 
@@ -29,22 +29,27 @@ header, main, footer {
 header {
     padding: 2em;
     text-align: center;
-    background-image: url('img/bgc1.jpg');
+    background-image: url('img/bgc.jpg');
     background-size: cover;
     background-position: center;
 }
 
 header section {
     margin: 0 auto;
-    width-max: 640px;
+   max-width: 640px;
 }
 
 .image {
     border-radius: 50%;
     height: 300px;
     transition: .2s;
-}
 
+}
+.image:hover {
+    -moz-box-shadow: 0 0 10px #fff;
+    -webkit-box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #fff;
+}
 
 h1 {
     margin: 1em 0;
@@ -136,7 +141,7 @@ ul.list > li {
 ul.list > li:before {
     content: "►";
     padding-right: 0.5em;
-    color: rgb(245, 162, 168);
+    color: rgb(184, 125, 91);
 }
 
 article {
