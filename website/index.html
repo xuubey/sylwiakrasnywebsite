@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="rwd.css">
+    <link rel="stylesheet" href="./uikit/css/uikit.min.css">
 </head>
 
 <body>
@@ -28,7 +29,7 @@
     <section>
         <div class="socials">
             <div class="social"><a href="#" target="_blank"><img src="img/ico-mail.png"
-                                                                                       alt="mail"></a></div>
+                                                                 alt="mail"></a></div>
             <div class="social"><a href="https://www.facebook.com/krasnysylwia" target="_blank"><img
                     src="img/ico-mess.png" alt="facebook"></a></div>
             <div class="social"><a href="https://www.linkedin.com/in/sylwia-krasny-24132016a/" target="_blank"><img
@@ -89,7 +90,28 @@
             </div>
         </article>
     </section>
-
+    <section>
+        <h3>Wykształcenie</h3>
+        <div class="school">
+            <p uk-margin>
+                <button class="uk-button uk-button-default"
+                        uk-tooltip="title: Studia podyplomowe: Java Web Developer; pos: bottom">Wyższa Szkoła
+                    Zarządzania i Bankowości
+                </button>
+            </p>
+            <p uk-margin>
+                <button class="uk-button uk-button-default"
+                        uk-tooltip="title: Ekonomia: nieruchomości i inwestycje; pos: bottom">Uniwersytet Ekonomiczny
+                </button>
+            </p>
+            <p uk-margin>
+                <button class="uk-button uk-button-default"
+                        uk-tooltip="title: Ekonomia: ekonomika agrobiznesu - licencjat; pos: bottom">Uniwersytet
+                    Rolniczy
+                </button>
+            </p>
+        </div>
+    </section>
     <section>
         <h3>Umiejętności</h3>
         <div class="skills">
@@ -105,10 +127,11 @@
             <div class="column">
                 <h4>Podstawowa znajomość:</h4>
                 <ul class="list">
-                    <li>Git</li>
-                    <li>React</li>
                     <li>Java</li>
+                    <li>Angular</li>
                     <li>Spring</li>
+                    <li>React</li>
+                    <li>GIT</li>
                     <li>SQL</li>
                 </ul>
             </div>
@@ -116,36 +139,47 @@
     </section>
 
     <section>
-        <h3>W wolnym czasie: </h3>
-        <div class="hobby">
-            <div class="column-hobby">
+        <h3>Zainteresowania: </h3>
+        <div class="hobby uk-text-center">
+            <div class="column-hobby uk-inline-clip uk-transition-toggle" tabindex="0">
                 <img src="img/dog.jpg" alt="dog" class="img">
-
-                <a href="https://www.instagram.com/matylda.thedog/" target="_blank">
-                    <div class="center">@matylda.thedog</div>
-                </a>
+                <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle uk-transition-slide-top-small">
+                    <a class="link" href="https://www.instagram.com/matylda.thedog/" target="_blank">
+                        <p class="uk-margin-small-top">@matylda.thedog</p>
+                    </a>
+                </div>
             </div>
-            <div class="column-hobby">
+            <div class="column-hobby uk-inline-clip uk-transition-toggle" tabindex="0">
                 <img src="img/books.jpg" alt="book" class="img">
-                <a href="https://lubimyczytac.pl/profil/2014944/xuubey" target="_blank">
-                    <div class="center">@lubimyczytac</div>
-                </a>
+                <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle uk-transition-slide-top-small">
+                    <a class="link" href="https://lubimyczytac.pl/profil/2014944/xuubey" target="_blank">
+                        <p class="uk-margin-small-top">@lubimyczytac</p>
+                    </a>
+                </div>
             </div>
-            <div class="column-hobby">
+            <div class="column-hobby uk-inline-clip uk-transition-toggle" tabindex="0">
                 <img src="img/bike.jpg" alt="bike" class="img">
-                <div class="center">rower</div>
+                <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle uk-transition-slide-top-small">
+                    <p class="uk-margin-small-top">rower</p>
+                </div>
             </div>
-            <div class="column-hobby">
+            <div class="column-hobby uk-inline-clip uk-transition-toggle" tabindex="0">
                 <img src="img/joga.jpg" alt="joga" class="img">
-                <div class="center">joga i medytacja</div>
+                <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle uk-transition-slide-top-small">
+                    <p class="uk-margin-small-top">joga i medytacja</p>
+                </div>
             </div>
-            <div class="column-hobby">
+            <div class="column-hobby uk-inline-clip uk-transition-toggle" tabindex="0">
                 <img src="img/avo.jpg" alt="avocado" class="img">
-                <div class="center">dieta roślinna</div>
+                <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle uk-transition-slide-top-small">
+                    <p class="uk-margin-small-top">dieta roślinna</p>
+                </div>
             </div>
-            <div class="column-hobby">
+            <div class="column-hobby uk-inline-clip uk-transition-toggle" tabindex="0">
                 <img src="img/makeup.jpg" alt="makeup" class="img">
-                <div class="center">kosmetyki naturalne</div>
+                <div class="uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle uk-transition-slide-top-small">
+                    <p class="uk-margin-small-top">kosmetyki naturalne</p>
+                </div>
             </div>
         </div>
     </section>
@@ -153,9 +187,13 @@
 
 </main>
 <footer>
+    <a href="#" uk-totop uk-scroll></a>
     <p>Created by Sylwia Krasny / 2020 </p>
 </footer>
 
 <script src="script.js"></script>
+<script src="./uikit/js/uikit.min.js"></script>
+<script src="./uikit/js/uikit-icons.min.js"></script>
+
 </body>
 </html>

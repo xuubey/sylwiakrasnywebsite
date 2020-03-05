@@ -117,7 +117,10 @@ main > section:last-child {
 
 }
 
-
+.school p{
+    display: inline-block;
+    margin: 30px 20px;
+}
 .skills .column {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -187,26 +190,12 @@ article {
     transform: scale(1.2);
 }
 
-.center, a > .center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: .2s;
-    opacity: 0;
+.link {
+    color: rgb(184, 125, 91);
+    text-decoration: none;
+
 }
 
-a > .center {
-    opacity: 1;
-    color: rgb(245, 217, 206);
-}
-
-.img:hover + .center, .img:hover + a > .center {
-    color: rgb(104, 49, 13);
-    opacity: 1;
-}
 
 
 footer {
@@ -214,4 +203,9 @@ footer {
     background-color: rgb(184, 125, 91);
     color: rgb(245, 217, 206);
     text-align: center;
+}
+
+
+footer p {
+    margin: auto;
 }
